@@ -13,8 +13,9 @@ for i in ${projectName[*]}
 do
 echo $i
 git checkout $i
-git pull origin $i
+$ git pull origin $i
+echo "运行完成 $i"
 
 
 done
-echo "失败$i"
+echo "执行结束"
