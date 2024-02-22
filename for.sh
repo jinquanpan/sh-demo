@@ -7,10 +7,15 @@
 
 echo '开始---------------'
 
-projectName=('你' '我' '他')
+projectName=('a' 'b')
 
 for i in ${projectName[*]}
 do
 echo $i
+git checkout $i
+$ git pull origin $i
+echo "运行完成 $i"
+
+
 done
-echo "失败$i"
+echo "执行结束"
