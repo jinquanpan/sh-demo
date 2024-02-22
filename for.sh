@@ -1,11 +1,11 @@
 
 WORKDIR=/e/mx/front/front-end-project-react
 # echo $PROJECT
-master="main"
+master="master"
 
 echo '开始---------------'
 
-projectName=('a' 'b' 'c')
+projectName=('oem-nengrui' 'oem-yiyao' 'oem-aisino' 'oem-huoyujuzhen' 'oem-ifacebox' 'oem-skieer' 'oem-upimc' 'oem-holyscape' 'oem-pioneerdata' 'oem-yijing')
 
 for i in ${projectName[*]}
 do
@@ -80,11 +80,9 @@ if [ $isMkdir ]; then
   rm -rf $WORKDIR/dist/.$PACKNAME 
   mv $WORKDIR/projects/$PACKNAME $WORKDIR/dist/.$PACKNAME 
 fi
-echo "---- 结束 END ----"
-
 
 echo "运行完成 $i"
 
 
 done
-echo "执行结束"
+echo "---- 结束 END ----"
